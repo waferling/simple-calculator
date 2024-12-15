@@ -1,0 +1,120 @@
+
+/* The body of the whole html page */
+body {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: cornsilk;
+    
+    /* Preventing dark mode from ruining page color at the body tag*/
+    margin: 0;
+    min-height: 100vh; /* Makes body (and hence the background-color) expand to full viewport height */
+}
+
+/* Input bar where the input-numbers and result appear */
+input {
+    border: none;
+    /* border-bottom: 2px solid #747478; */
+    background-color: #d78644;
+    text-align: right;
+    font-family: inherit;
+    font-size: 20px;
+    width: 263px;
+    grid-column: span 4;
+}
+
+/* Makes input bar text color different from default browser style */
+/* This needs to be put separately (as shown here) so that placeholder color changes */
+input::placeholder {
+    color: cornsilk; /* Adjust placeholder color */
+}
+
+/* Maintains color of entered digits and result on display bar*/
+#display {
+    color: cornsilk; /* Adjust placeholder color */
+}
+
+
+/*The calculator's invisible outline has class container, display:grid
+  and holds all other calculator-related elements */
+.container {
+    display: grid;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #d78644;
+    border-radius: 5%;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px 0px;
+    padding-left: 25px;
+    width: 300px;
+    height: 350px;
+
+    /* Keeps calculator in centre of page, responsive */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style of all clickable calculator buttons */
+button {
+    border-radius: 7px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color:cornsilk;
+    background-color: rgb(116, 59, 7);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 0;
+
+    text-align: center;
+    line-height: [button-height];
+    font-family: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* C button, 0 button of calculator */
+.is-clear, .is-zero {
+    grid-column: span 3;
+    width: auto;
+    margin-right: 15px;
+}
+
+.is-clear {
+    background-color: rgb(122, 22, 45);
+    color: cornsilk;
+}
+
+.is-equals {
+    background-color: rgb(7, 86, 25);
+    color: cornsilk;
+}
+
+/* Add this custom created class to all calculator buttons */
+.click-effect {
+    transition: transform 0.5s;
+}
+
+.no-select {
+    /* Prevents selection (with cursor) of the button text */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* When the button is active/clicked, these effects happen */
+.click-effect:active {
+    transform: scale(0.95);
+    background-color: #d0d0d0;
+}
+
+
+/* When text on page is drag-selected with cursor */
+::selection {
+    background-color: #f9d442; /* Yellow background */
+    color: rgb(128, 18, 174); /* Purple text */
+}

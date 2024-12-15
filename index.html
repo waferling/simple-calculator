@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./calc.css">
+</head>
+
+<body>
+    <!-- Input field to display the calculator results -->
+    <div class="container">
+        <input type="text" id="display" placeholder="0" disabled>
+        <button onclick="clearDisplay()" class="click-effect no-select is-clear">C</button>
+        <button onclick="setOperator('/')" class="click-effect no-select">&divide;</button>
+        
+        <button onclick="appendNumber('7')" class="click-effect no-select">7</button>
+        <button onclick="appendNumber('8')" class="click-effect no-select">8</button>
+        <button onclick="appendNumber('9')" class="click-effect no-select">9</button>
+        <button onclick="setOperator('*')" class="click-effect no-select">&times;</button>
+        
+        <button onclick="appendNumber('4')" class="click-effect no-select">4</button>
+        <button onclick="appendNumber('5')" class="click-effect no-select">5</button>
+        <button onclick="appendNumber('6')" class="click-effect no-select">6</button>
+        <button onclick="setOperator('-')" class="click-effect no-select">&minus;</button>
+        
+        <button onclick="appendNumber('1')" class="click-effect no-select">1</button>
+        <button onclick="appendNumber('2')" class="click-effect no-select">2</button>
+        <button onclick="appendNumber('3')" class="click-effect no-select">3</button>
+        <button onclick="setOperator('+')" class="click-effect no-select">&plus;</button>
+        
+        <button onclick="appendNumber('0')" class="click-effect no-select is-zero">0</button>
+        <button onclick="calculate()" class="click-effect no-select is-equals">&equals;</button>
+    </div>
+
+        <script src="calc.js"></script>
+    </body>
+</body>
+</html>
