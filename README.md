@@ -1,1 +1,1 @@
-See the calculator here: https://waferling.github.io/simple-calculator/
+See the calculator [here.](https://waferling.github.io/simple-calculator/)
