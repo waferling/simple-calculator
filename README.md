@@ -9,6 +9,11 @@ Try it [here.](https://waferling.github.io/efootball-points-calculator/)
 * CSS
 * JavaScript
 
+## :rocket: Features
+* Intuitive interface
+* Edge-case handling
+* Support for dark mode
+
 ## :pushpin: The Process
 I started with the HTML code, creating the full page structure, and then the placeholders for numbers and other buttons with some CSS- which took some trial and error to get right. After the structure was in place, I went in with the color scheme, experimenting with color palletes until I ended up with a result I was happy with. Then came the JavaScript code, which was the actual calculator. It was interesting to try out different edge cases, pass in inputs, and render the result values correctly on the frontend. Making the retro pixel font sit well in the placeholder boxes and tweaking visibility until it worked took a bit of effort. I also figured out how to make the entire page background a single color, and fixed erratic behaviour that the browser caused to the page color in the header region. The end result made it all worth it.
 
