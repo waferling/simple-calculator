@@ -1,7 +1,7 @@
 See the calculator [here.](https://waferling.github.io/simple-calculator/)
 ## :triangular_ruler: A Simple Calculator
 
-A basic calculator with a retro interface. I wanted to experiment with CSS, pixel fonts, and making a unique interface for a calculator. Something that stands out from the norm of calculators. This was my first try at a personal project. I enjoyed giving this project a personal touch this way with the color scheme and overall vibe.
+A basic calculator with a retro interface. I wanted to experiment with CSS, pixel fonts, and making a unique interface for a calculator. Something that stands out from the usual. This was my first try at a personal project. I enjoyed giving this a personal touch with the choice of color scheme and elements.
 Try it [here.](https://waferling.github.io/efootball-points-calculator/)
 
 ## :sparkles: Technologies
